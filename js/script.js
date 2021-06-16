@@ -1,3 +1,9 @@
+var output=document.getElementById("output");
+var output=document.getElementById("output2");
+var output=document.getElementById("output3");
+
+
+
 /* creare un object  con un nome cognome età */
 var studente ={
    
@@ -9,40 +15,75 @@ var studente ={
 
 // creare un for-in  per  ciclare   e quindi aggiungere  un valore asseconda di una condizione
 
-for (var i = 0; i < studente.length; i++) {
+
 
     // per stampare tutti i nomi dei passengers
-  console.log(studente[i])
+
     
    
-    for (var key in studente[i]) {
-      
-        console.log(key, studente[i][key])
+    for (var key in studente) {
+      output.innerHTML += key += studente [key] +=" "
+    
     }
     
+//esercizio 2 
+var studenti = [
+   
+   
+    {
+    name: 'Ciro' ,
+    surname: 'Esposito ' , 
+    
+    },
+
+    {
+     name: 'Antonio' ,
+     surname: 'Esposito ' , 
+    
+     },
+
+
+     {
+      name: 'Ciro' ,
+      surname: 'Esposito ' , 
+     
+      }
+] 
+
+for(var x = 0; x <  studenti.length; x++){
+    output2.innerHTML+= studenti[x].name  += studenti[x].surname += " "
 }
+
 
 
 //esercizio 3
-var istituto ={
+
+
+    var istituto ={
     matricole : []
 }
 
-while (scuola.studenti.length < 3) {
-    
-    var nomeMatricola = prompt('Inserisci il nome del passeggero');
-    var cognomeMatricola = prompt('Inserisci il cognome del passeggero');
+    var nomeMatricola = prompt('Inserisci il nome della matricola');
+    var cognomeMatricola = prompt('Inserisci il cognome della matricola');
     var anni = parseInt( prompt('Inserisci età '));
-
-   
+    
     istituto.matricole.push({
         name: nomeMatricola,
         surname: cognomeMatricola,
         age :  anni 
     });
-    console.log(istituto.matricole[i]);
-    document.getElementsByClassName
+
+
+    for (x=0 ;  x<istituto.matricole.length  ;x++) {
+         
+        for (var k in istituto.matricole[x]) {
+         output3.innerHTML+= istituto.matricole[x][k]+" ";
+   } 
     
-}
+
+}  
+  
+  
+
 
 
